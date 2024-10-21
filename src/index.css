@@ -1,0 +1,703 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.app{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(0, 10, 21); */
+    /* background-color: white; */
+    background: linear-gradient( 70deg,black, rgb(68, 5, 113),black);
+}
+
+.nav{
+    height: 60px;
+    width: 100%;
+    /* background-color: rgba(128, 128, 128, 0.301); */
+    background: linear-gradient(45deg, black,rgb(64, 6, 6),black);
+    display: flex;
+    color:white;
+    /* box-shadow:  0 1px 5px #0d3acd; */
+    position: sticky;
+    top: 0;
+    /* box-shadow: rgba(167, 28, 28, 0.584) 0px 1px 1px 0px inset, rgba(33, 33, 213, 0.797) 0px 50px 100px -20px, rgba(141, 52, 52, 0.644) 0px 30px 60px -30px; */
+   
+  
+}
+.leftnav{
+    /* background-color: yellow; */
+    height: 60px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    text-transform: capitalize;
+
+}
+
+.rightnav{
+    
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    width: 40%;
+    font-size: 20px;
+    text-transform: capitalize;
+    /* background-color: red; */
+    margin-left: 330px;
+}
+
+li{
+    /* background-color: pink; */
+    list-style: none;
+   font-size: 19px;
+    margin-left: 60px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+li:hover{
+    color: gray;
+    transform: 0.5s ;
+}
+.darkmodebtn{
+    height: 36px;
+    width: 90px;
+    background: linear-gradient(45deg,blue,rgb(53, 131, 162),pink);
+    border-radius: 10px;
+    border-style: none;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: aliceblue;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.topSection{
+    /* background-color: red; */
+    color: aliceblue;
+    height: 620px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 100px;
+    position: relative;
+  
+}
+.bioImage{
+    display: flex;
+}
+
+.topSection .bio{
+    font-size: 30px;
+   /* background-color: aqua; */
+   width: 60%;
+   /* height: 100%; */
+}
+.bio>h2{
+    font-size: 60px;
+    z-index: 1;
+    /* position: absolute; */
+    /* width: 100%; */
+}
+
+.photos{
+    /* background-color: purple; */
+    height: 450px;
+    width: 25%;
+    margin-right: 70px;
+    margin-left: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+    /* z-index: 1; */
+    box-shadow: 0px 0px 1px 1px #030392;
+    /* opacity: .7; */
+}
+.photos img{
+    height: 450px;
+    width: 100%;
+}
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #183287; */
+    height: 500px;
+    width: 100%;
+}
+
+.leftskills{
+    height: 450px;
+    width: 500px;
+    /* background-color: aqua; */
+    
+}
+.skillitems{
+    margin-top: 30px;
+}
+.skillsinfo{
+    /* background-color: antiquewhite; */
+    height: 350px;
+    width: 500px;
+    margin-top: 130px;
+}
+.skillsinfo>p{
+    padding: 15px;
+    color: aliceblue;
+}
+
+.parent{
+    height: 30px;
+    width: 450px;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 3px;
+    display: flex;
+}
+.child{
+    height: 100%;
+    width: 80%;
+    /* background-color: red; */
+    animation: skill 5s infinite;
+   
+}
+@keyframes skill {
+    0%{
+        width: 80%;
+        display: grid;
+        place-items: center;
+        background-color: red;
+        border-radius: 10px;
+    }
+    10%{
+        width: 15%;
+        display: grid;
+        place-items: center;
+        background-color: red;
+        border-radius: 10px;
+    }
+    25%{
+        width: 30%;
+        display: grid;
+        place-items: center;
+        background-color: red;
+        border-radius: 10px;
+    }
+    50%{
+        width: 45%;
+        display: grid;
+        place-items: center;
+        background-color: red;
+        border-radius: 10px;
+    }
+    75%{
+        width: 60%;
+        display: grid;
+        place-items: center;
+        background-color: red;
+        border-radius: 10px;
+    }
+    100%{
+        width: 80%;
+        display: grid;
+        place-items: center;
+        background-color: red;
+        border-radius: 10px;
+}
+}
+.skillhead{
+    color: white;
+    font-size: 60px;
+    
+}
+h3{
+    color: white;
+}
+/* .skillsheading{
+    color: white;
+    background-color: #4caf50;
+    height: 80px;
+    width: 500px;
+    display: grid;
+    place-items: center;
+} */
+/* .skillsheading h1{
+    font-size: 30px;
+    text-transform: capitalize;
+} */
+ 
+.firstline{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+.projectheading{
+    color: white;
+    font-size: 60px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+.firstproject{
+    height: 210px;
+    width: 300px;
+    background-color:  #011041;
+    border-radius: 5px;
+}
+.firstproject>img{
+    height: 120px;
+    width: 100%;
+    /* background-color:  #011041; */
+    border-radius: 5px;
+}
+.firstproject>h1{
+    color: white;
+}
+.firstproject>p{
+    color: white;
+    margin-top: 2px;
+    font-size: 11px;
+}
+.firstproject:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.secondproject{
+    height: 210px;
+    width: 300px;
+    background-color:  #011041;
+    border-radius: 5px;
+}
+.secondproject>img{
+    height: 120px;
+    width: 100%;
+    /* background-color:  #011041; */
+    border-radius: 5px;
+}
+.secondproject:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.secondproject>h1{
+    color: white;
+    margin-top: 4px;
+}
+.secondproject>p{
+    color: white;
+    font-size: 11px;
+}
+.thirdproject{
+    height: 210px;
+    width: 300px;
+    background-color:  #011041;
+    border-radius: 5px;
+}
+.thirdproject>img{
+    height: 120px;
+    width: 100%;
+    /* background-color:  #011041; */
+    border-radius: 5px;
+}
+.thirdproject:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.thirdproject>h1{
+    color: white;
+    /* margin-top: 40px; */
+}
+.thirdproject>p{
+    color: white;
+    font-size: 11px;
+    /* margin-top: 10px; */
+}
+.secondline{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+.fourproject{
+    height: 210px;
+    width: 300px;
+    background-color:  #011041;
+    border-radius: 5px;
+}
+.fourproject>img{
+    height: 120px;
+    width: 100%;
+    /* background-color:  #011041; */
+    border-radius: 5px;
+}
+.fourproject>h1{
+    color: white;
+    margin-top: 6px;
+}
+.fourproject>p{
+    color: white;
+    font-size: 11px;
+}
+
+.fourproject:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.fiveproject{
+    height: 210px;
+    width: 300px;
+    background-color:  #011041;
+    border-radius: 5px;
+}
+.fiveproject>img{
+    height: 120px;
+    width: 100%;
+    /* background-color:  #011041; */
+    border-radius: 5px;
+}
+.fiveproject>h1{
+    color: white;
+    /* margin-top: 60px; */
+    /* margin-left: 10px; */
+}
+.fiveproject>p{
+    color: white;
+    margin-top: 3px;
+    font-size: 11px;
+}
+.fiveproject:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.sixproject{
+    height: 210px;
+    width: 300px;
+    background-color: #011041;
+    border-radius: 5px;
+}
+.sixproject>img{
+    height: 120px;
+    width: 100%;
+    /* background-color:  #011041; */
+    border-radius: 5px;
+}
+.sixproject>h1{
+    color: white;
+    margin-top: 6px;
+}
+.sixproject>p{
+    color: white;
+    font-size: 11px;
+}
+.sixproject:hover{
+    transform: scale(1.2);
+    z-index: 2;
+}
+.footer{
+    height: 200px;
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.301) ;
+    margin-top: 190px;
+}
+.footer{
+    /* margin-top: 40px; */
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.details{
+    /* background-color: aqua; */
+    height: 100px;
+    /* margin-left: 240px; */
+}
+.details>h5{
+    padding: 5px;
+    margin-top: 10px;
+}
+.logos{
+    height: 50px;
+    width: 180px;
+    /* background-color: aqua; */
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* gap: 5px; */
+    margin-right: 70px;
+}
+.logo1{
+    height: 30px;
+    width: 30px;
+    background-color: #0c0cd0;
+    font-size: 30px;
+}
+.logo2{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    font-size: 30px;
+}
+.logo3{
+    height: 30px;
+    width: 30px;
+    background-color: rgb(201, 6, 139);
+    font-size: 30px;
+}
+.downloadcvbutton>button{
+    height: 36px;
+    width: 90px;
+    background: linear-gradient(45deg,blue,rgb(53, 131, 162),pink);
+    border-radius: 10px;
+    border-style: none;
+    text-transform: capitalize;
+    font-size: 12px;
+    color: aliceblue;
+    margin-left: 30px;
+    cursor: pointer; 
+}
+button>a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* For Extra Small Devices (Phones, 0px - 575px) */
+/* @media only screen and (max-width: 575px) {
+    .nav {
+        height: 50px;
+        width: 30px;
+    }
+    .leftnav, .rightnav {
+        width: 100%;
+        justify-content: space-between;
+        font-size: 16px;
+    }
+    .topSection {
+        margin-top: 80px;
+        margin-left: 20px;
+        width: 90%;
+    }
+    .bio>h2 {
+        font-size: 36px;
+    }
+    .photos {
+        height: 250px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .photos img {
+        height: 250px;
+    }
+    .skills {
+        flex-direction: column;
+        height: auto;
+    }
+    .leftskills, .skillsinfo {
+        width: 90%;
+    }
+    .parent {
+        width: 100%;
+    }
+    .projectheading {
+        font-size: 36px;
+        margin-left: 10px;
+    }
+    .firstproject, .secondproject, .thirdproject, .fourproject, .fiveproject, .sixproject {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+} */
+
+/* For Small Devices (Portrait Tablets, 576px - 767px) */
+/* @media only screen and (min-width: 576px) and (max-width: 767px) {
+    .nav {
+        height: 55px;
+        width: 60px;
+    }
+    .leftnav, .rightnav {
+        width: 50%;
+        font-size: 18px;
+    }
+    .topSection {
+        margin-left: 30px;
+        width: 95%;
+    }
+    .bio>h2 {
+        font-size: 40px;
+    }
+    .photos {
+        height: 300px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .photos img {
+        height: 300px;
+    }
+    .skills {
+        flex-direction: column;
+        height: auto;
+    }
+    .leftskills, .skillsinfo {
+        width: 90%;
+    }
+    .parent {
+        width: 100%;
+    }
+    .projectheading {
+        font-size: 40px;
+        margin-left: 30px;
+    }
+    .firstproject, .secondproject, .thirdproject, .fourproject, .fiveproject, .sixproject {
+        width: 95%;
+        margin-top: 10px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+} */
+
+/* For Medium Devices (Landscape Tablets, 768px - 991px) */
+/* @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nav {
+        height: 60px;
+        width: 60px;
+    }
+    .leftnav, .rightnav {
+        width: 50%;
+        font-size: 20px;
+    }
+    .topSection {
+        margin-left: 50px;
+        width: 90%;
+    }
+    .bio>h2 {
+        font-size: 50px;
+    }
+    .photos {
+        height: 400px;
+    }
+    .photos img {
+        height: 400px;
+    }
+    .skills {
+        flex-direction: row;
+        height: auto;
+    }
+    .leftskills, .skillsinfo {
+        width: 45%;
+    }
+    .projectheading {
+        font-size: 50px;
+        margin-left: 50px;
+    }
+    .firstproject, .secondproject, .thirdproject, .fourproject, .fiveproject, .sixproject {
+        width: 45%;
+        margin-top: 10px;
+    }
+} */
+
+/* For Large Devices (Desktops, 992px - 1199px) */
+/* @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .nav {
+        height: 60px;
+        width: 60px;
+    }
+    .leftnav, .rightnav {
+        width: 50%;
+        font-size: 22px;
+    }
+    .topSection {
+        margin-left: 80px;
+        width: 85%;
+    }
+    .bio>h2 {
+        font-size: 55px;
+    }
+    .photos {
+        height: 450px;
+    }
+    .photos img {
+        height: 450px;
+    }
+    .skills {
+        flex-direction: row;
+        height: auto;
+    }
+    .leftskills, .skillsinfo {
+        width: 40%;
+    }
+    .projectheading {
+        font-size: 55px;
+        margin-left: 80px;
+    }
+    .firstproject, .secondproject, .thirdproject, .fourproject, .fiveproject, .sixproject {
+        width: 40%;
+        margin-top: 10px;
+    }
+} */
+
+/* For Extra Large Devices (Large Desktops, 1200px and above) */
+/* @media only screen and (min-width: 1200px) {
+    .nav {
+        height: 60px;
+        width: 60px;
+    }
+    .leftnav, .rightnav {
+        width: 50%;
+        font-size: 24px;
+    }
+    .topSection {
+        margin-left: 100px;
+        width: 80%;
+    }
+    .bio>h2 {
+        font-size: 60px;
+    }
+    .photos {
+        height: 515px;
+    }
+    .photos img {
+        height: 515px;
+    }
+    .skills {
+        flex-direction: row;
+        height: auto;
+    }
+    .leftskills, .skillsinfo {
+        width: 35%;
+    }
+    .projectheading {
+        font-size: 60px;
+        margin-left: 100px;
+    }
+    .firstproject, .secondproject, .thirdproject, .fourproject, .fiveproject, .sixproject {
+        width: 33%;
+        margin-top: 10px;
+    }
+} */
